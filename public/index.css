@@ -8,11 +8,16 @@ body {
   text-align: center;
 }
 
+#events, #no-events {
+  margin-top: 50px;
+}
+
 #events {
   border-collapse: collapse;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   font-size: 0.9em;
-  margin: 50px auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 640px;
 }
 
@@ -36,6 +41,12 @@ body {
 
 #events td, #events th {
   padding: 12px 15px;
+}
+
+#no-events {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
 }
 
 #reload {
