@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -e;
+
+cd $(dirname $0)/..;
+
+npm install;
+
+cd public;
+
+if [ ! -e "config.json" ]; then
+  cp config.json{.example,};
+fi
