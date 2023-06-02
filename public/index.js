@@ -1,9 +1,5 @@
-function reload() {
-  window.location.reload();
-}
-
 $(function() {
-  $.getJSON('config.json', function(res) {
+  $.getJSON(`config.json?ts=${Math.floor(Date.now() / 1000)}`, function(res) {
     var data = (res.data || []).sort(function(a, b) { return b.timestamp - a.timestamp; });
     if (!data.length) {
       $('#no-events').show();
