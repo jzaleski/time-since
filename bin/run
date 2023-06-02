@@ -4,4 +4,6 @@ set -e;
 
 cd $(dirname $0)/..;
 
+export CONFIG_JSON=$(cat config.json | tr -d "\n");
+
 node index.js;

@@ -6,7 +6,6 @@ cd $(dirname $0)/..;
 
 npm install;
 
-config_json_file="public/config.json";
-if [ ! -e ${config_json_file} ]; then
-  echo "{\"data\": [{\"event\": \"Hello World!\", \"timestamp\": 0}]}" > ${config_json_file};
+if [ ! -e "config.json" ]; then
+  cp config.json{.example,}
 fi

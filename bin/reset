@@ -6,6 +6,6 @@ cd $(dirname $0)/..;
 
 rm -rf node_modules;
 
-rm -f public/config.json;
+rm -f config.json;
 
 bin/setup;
